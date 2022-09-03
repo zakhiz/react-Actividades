@@ -1,21 +1,27 @@
-const Navbar=()=>{
-    return( 
-    <>
-    <nav className="btn-primary">
-        <a className="titulo" href="#">VeoVeo</a>
-      <ul>
-      <li>
-        <a  href="#">Marcas</a>
-      </li>
-      <li>
-        <a  href="#">Lentes de sol</a>
-      </li>
-      <li>
-        <a  href="#">Protesis oculares</a>
-      </li>
-      </ul>
-    </nav>
+import { FaCartArrowDown } from 'react-icons/fa';
+
+const Navbar= ()=>{
+   return(
+    <>{/*esto es un fragment*/} 
+        <nav className="btn-primary">
+
+            <h1>VeoVeo</h1>
+            <ul className="containerList">
+                <li>
+                     <a href="#">Marcas</a>
+                </li>
+                <li>
+                     <a href="#">Contacto</a>
+                </li>
+                <li>
+                     <a href="#">Nosotros</a>
+                </li>
+                
+            </ul>
+            <FaCartArrowDown/>
+        </nav>
     </>
-    );
+    
+   );
 }
 export default Navbar;
