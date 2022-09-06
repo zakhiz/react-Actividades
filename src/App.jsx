@@ -4,8 +4,8 @@ const App =() =>{
   return(
    <>
    <Navbar/>
-   
    <ItemListContainer greeting = "Hello World"/>
+
   </>
   )
   
