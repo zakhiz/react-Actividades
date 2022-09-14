@@ -38,39 +38,51 @@ svg{
   text-align: center;
   font-size: 1.8rem;
 }
+.botton{
+  position: absolute;
+  right: 400px;
+  top: 500px;
+}
 .card-container{
   display: flex;
-  justify-content: center;
+  position: relative;
+}
+.bottons{
+  position: absolute;
+  left: 20px;
 }
 .card{
-  font-size: 1.4em;
-  display:block;
+   border-top: 2px solid #3a86ff;
+   background-color: #caf0f8;
+   font-size: 1.2em;
+   display:block;
    text-align: center;
-   padding: 50px;
    width: 300px;
-
+   
 }
 .add{
+  position: absolute;
   padding: 10px;
-  box-shadow: 0 1px 4px 1px #00b4d8;
-  background: #90e0ef;
+  box-shadow: 0 1px 4px 1px #0077b6;
+  background: #3a86ff;
   outline: none;
   margin: 6px;
-  border: 1px solid #00b4d8;
+  border: 1px solid #0077b6;
   border-radius: 20px;
 }
 .p{
-  padding: 5px;
-  box-shadow: 0 1px 4px 1px #00b4d8;
-  font-size: 1.8rem;
-  background: #90e0ef;
-  border: 1px solid #00b4d8;
+  margin:0 5px 0 5px ;  
+  margin-top: 16px;
+  width: 50px;
+  height: 30px;
   border-radius: 20px;
-  margin: 5px;
+  font-size: 1.4rem;
+  border: 2px solid #0077b6;
+  background: #3a86ff;
   outline: none;
 }
 
-.card-prod{
+/*.card-prod{
      border-radius: 20px;
      box-shadow: 0 2px 5px 2px #000;
      border: 2px solid #f5ebe0;
@@ -93,19 +105,55 @@ svg{
   font-size: 1.4rem;
   line-height: 2;
 }
-
+.ph-container{
+  display: flex;
+  justify-content: space-evenly;
+}
 .ph{
-  border-radius: 50%;
-  width: 300px;
-  height: 250px;
+  border-radius: 60%;
+  width: 400px;
+  height: 350px;
   object-fit: contain;
-  transition: all 0.2s;
+}
+
+*/
+.card-prod{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  background: #caf0f8;
+  position: relative;
+}
+.ph-container{
+  width: 100%;
+}
+.ph{
+  margin-top: 200px;
+  margin-left: 150px;
+  width: 30%;
+  height: 300px;
+  border-radius: 20%;
+  box-shadow: 0 2px 5px 10px #ade8f4;
+  transition: all 0.4s;
+}
+.ph:hover{
+  transform: scale(1.2);
+}
+.text{
+   position: absolute;
+   right: 300px;
+   top:350px;
+}
+.prod-title{
+  font-size: 3rem;
+}
+.description{
+  font-size: 2rem;
 }
 
 
 .load{
   display: flex;
   justify-content: center;
-  
+  margin:300px 110px 100px 110px;
 }
-
