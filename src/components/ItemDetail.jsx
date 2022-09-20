@@ -1,7 +1,11 @@
 import ItemCount from "./ItemCount";
 import Swal from 'sweetalert2'
+import { Link } from "react-router-dom";
+import { useState } from "react";
 const ItemDetail = ({detail})=>{
+  const [goCart, setgoCart] = useState(false)
     const onAdd= (quantity)=>{
+      setgoCart(true)
         Swal.fire({
             title: `${quantity} products added!`,
             icon: 'success',
@@ -19,8 +23,12 @@ const ItemDetail = ({detail})=>{
                 <p>{detail.description}</p>  
              </div>
              <div>
-               <ItemCount initial={1} stock={5} onAdd={onAdd}/>   
-             </div>        
+              {
+               goCart ?
+               <Link to="/cart"><button>Cart</button></Link> :   
+                <ItemCount initial={0} stock={5} onAdd={onAdd}/>
+              }
+               </div>        
     </div>
 
   )
