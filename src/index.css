@@ -50,6 +50,10 @@ li{
   position: absolute;
   right: 90px;
   top:30px;
+  color: #000;
+}
+.cart:hover{
+  color: #000;
 }
 /**navbar*/
 

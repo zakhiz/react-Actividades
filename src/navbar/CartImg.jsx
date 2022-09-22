@@ -1,7 +1,8 @@
 import { FaCartArrowDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const CartImg=()=>{
     return(
-        <FaCartArrowDown className='cart' />
+        <Link to="/cart"><FaCartArrowDown className='cart'/></Link>
     )
 }
 export default CartImg;
