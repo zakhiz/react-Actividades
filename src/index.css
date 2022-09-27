@@ -55,6 +55,12 @@ li{
 .cart:hover{
   color: #000;
 }
+.badge{
+  position: absolute;
+  right:74px;
+  top: 25px;
+  background-color: #e63946;
+}
 /**navbar*/
 
 .load{
