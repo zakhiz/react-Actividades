@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const Item=({id,image,title,price})=>{
+const Item=({id,image,title,price,stock})=>{
     
     return(
        <div className="card text-center">
@@ -8,6 +8,7 @@ const Item=({id,image,title,price})=>{
            <div className="card-body">
                <h5 className="card-title">{title}</h5>
                <p className="text-danger">${price}</p>
+               <p>{stock}</p>
                <Link className="btn btn-outline-secondary " to={`/item/${id}`}>More Detail</Link>
            </div>
         

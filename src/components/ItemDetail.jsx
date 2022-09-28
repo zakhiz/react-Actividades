@@ -28,6 +28,7 @@ const ItemDetail = ({detail})=>{
                <h3>{detail.title}</h3>
                 <p>{detail.description}</p>  
                 <p className="text-danger">{detail.price}</p>
+                <p>{detail.stock}</p>
              </div>
              {isInCart(detail.id) ? 
                 <div>
@@ -39,7 +40,7 @@ const ItemDetail = ({detail})=>{
               {
                (isInCart(detail.id)) ?
                <Link to="/cart" ><button className="btn btn-warning">Cart</button></Link> :   
-                <ItemCount initial={0} stock={5} onAdd={onAdd}/>
+                <ItemCount initial={detail.initial} stock={detail.stock} onAdd={onAdd}/>
               }
                        
     </div>
