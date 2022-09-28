@@ -1,20 +1,22 @@
-import csFetch from "../utils/fetchCs";
-import products from "../utils/getProducts";
+//import csFetch from "../utils/fetchCs";
+import { doc, getDoc } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 import { useEffect,useState } from "react";
 import { useParams } from "react-router-dom";
 import Loader from "./loader";
+import {db} from '../utils/firebaseConfig'
 const ItemDetailContainer = () =>{
   const [data,setData] = useState({});
   const [loading,setLoading] = useState(false);
   const {id} = useParams();
   useEffect(() => {
-    setLoading(true);
-    csFetch(2000,products.find(item => item.id == id))
-    .then(result => setData(result))
-    .catch(err => console.log(err))
-    .finally(()=> setLoading(false))
-  }, []);
+    setLoading(true)
+    const queryDoc = doc(db, 'products', id)
+    getDoc(queryDoc)
+     .then(result => setData({id: result.id,...result.data()}))
+     .catch(err => console.log(err))
+     .finally(()=> setLoading(false))
+  }, [id]);
   return(
      <div>
       {
@@ -26,3 +28,5 @@ const ItemDetailContainer = () =>{
   )
 }
 export default ItemDetailContainer;
+
+
