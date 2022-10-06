@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ecommerce VeoVeo 
 
-## Available Scripts
+Es una tienda con una pequeña variedad de productos. Esta misma tiene el funcionamiento necesario para gestionar la venta de los productos en stock.
 
-In the project directory, you can run:
 
-### `npm start`
+## Comenzando 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Si deseas clonar el proyecto para un uso institucional podras clonarlo 
+ingresando esto en tu consola 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+gh repo clone zakhiz/react-Actividades
 
-### `npm test`
+## Pre-requisitos 📋
+Antes de darle Start tienes que instalar el node_modules y las siguientes cosas : 
+```
+react-icons 
+react-router-dom 
+sweetalert2
+sweetalert2-react-content
+bootstrap
+firebase
+```
+### Instalación 🔧
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para usar la app tenes que ingresar a la terminal , una vez alli tendras que darle 
 
-### `npm run build`
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Luego para finalizar su uso 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+Ctrol C y le das a la S
+```
+## Construido con 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Utilice React.js , Css3 , bootstrap y sweetalert2
 
-### `npm run eject`
+* [React.js](https://es.reactjs.org/) - Libreria usada para la creacion de la app
+* [Css3](https://developer.mozilla.org/es/docs/Web/CSS) - tecnologia usada para diseño
+* [bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - FrameWork usado para diseño y maquetacion
+* [sweetalert2](https://sweetalert2.github.io/) - Alerts para notificiones
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Autor ✒️
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Jimmy Sebastian Higa Ramirez** 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Licencia 📄
 
-## Learn More
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Expresiones de Gratitud 🎁
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.

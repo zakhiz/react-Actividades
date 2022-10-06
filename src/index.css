@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -71,7 +73,95 @@ li{
 
 .card-img-top{
   height: 200px;
+  border-bottom: 3px solid #000;
+  border-radius: 0 0 15px 15px;
 }
 .col-md-4{
   padding: 5px;
+}
+.card-edit{
+  border: 2px solid #000 !important;
+}
+.precio{
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1.3rem;
+}
+.card-title{
+  font-family: 'Open Sans', sans-serif !important;
+
+}
+.text-stock{
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 0 1px #000;
+}
+.text-btn{
+  font-family: 'Barlow', sans-serif !important; 
+  font-size: 1.4rem;
+
+}
+.card-center{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  position: relative;
+}
+.ft-referencia{
+  padding: 25px;
+  display: flex;
+  justify-content: center;  
+}
+.ft{
+   border-left: 2px solid #000;
+   border-right: 2px solid #000;
+   border-radius: 5px 40px 5px 40px;
+}
+.text-detail-fonts{
+   font-family: 'Open Sans', sans-serif;
+   padding: 14px;
+}
+.bt{
+  margin-bottom: 10px !important;
+  margin-left: 10px !important;
+}
+.bts{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.prod-btn{
+  background-color: #e63946;
+}
+.bottons{
+  padding: 10px;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1.3rem;  
+  outline: 1px solid #fff ;
+}
+.conta{
+  margin: 20px;
+}
+.text-empty{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.3rem;
+  }
+
+ .btn-delete{
+   margin: 10px; 
+}
+
+ .card-total{
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  margin: 40px;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  border-radius: 5px 10px 5px 10px;
+} 
+.text-total{
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1.3rem;
+}
+.card-prod{
+  padding: 10px;
 }

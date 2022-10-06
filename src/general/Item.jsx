@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 const Item=({id,image,title,price,stock})=>{
     
     return(
-       <div className="card text-center">
+       <div className="card text-center card-edit">
              <img className="card-img-top" src={image} alt="reference"/>
            <div className="card-body">
                <h5 className="card-title">{title}</h5>
-               <p className="text-danger">${price}</p>
-               <p>{stock}</p>
-               <Link className="btn btn-outline-secondary " to={`/item/${id}`}>More Detail</Link>
+               <p className="text-danger precio">${price}</p>
+               <p className="text-stock">Stock: {stock}</p>
+               <Link className="btn btn-secondary text-btn " to={`/item/${id}`}>More Detail</Link>
            </div>
         
        </div>
@@ -20,25 +20,3 @@ const Item=({id,image,title,price,stock})=>{
 export default Item
 
 
-{/*<div>
-        <div>
-              <div>
-                 <div>
-                      <div>
-                      </div>
-                 </div>
-              <div>
-               <div>
-                    <div>
-                       <h5 >{title}</h5>
-                     </div>
-                  <div>
-                    <p >{description}</p>       
-                  </div>
-                 </div>
-            </div>
-               
-      </div>
-        </div>
-        
-        </div> */}

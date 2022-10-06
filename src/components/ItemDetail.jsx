@@ -19,31 +19,31 @@ const ItemDetail = ({detail})=>{
 
   return(
 
-    <div>
-              <Link to="/"><button className="btn btn-info">Continue Shopping</button></Link>
-             <div>
-                 <img src={detail.Image} alt = "product" />
+    <div className="container">
+          <div className="card-center">
+             <div className="ft-referencia">
+                 <img className="ft" src={detail.Image} alt = "product" />
              </div>            
-             <div>
+             <div className="text-detail-fonts">
                <h3>{detail.title}</h3>
                 <p>{detail.description}</p>  
-                <p className="text-danger">{detail.price}</p>
-                <p>{detail.stock}</p>
+                <p className="text-danger">Price: ${detail.price}</p>
+                <p>Stock : {detail.stock}</p>
              </div>
              {isInCart(detail.id) ? 
-                <div>
-                   <p>Already in cart</p>
-                   <button className="btn btn-danger" onClick={() => removeProduct(detail.id)}>Delete from cart</button>
+                <div >
+                   <p className="text-detail-fonts">Already in cart</p>
+                   <button className="btn btn-danger bt" onClick={() => removeProduct(detail.id)}>Delete from cart</button>
                 </div>
-                : <p>Add Now!</p>
+                : <p className="text-detail-fonts">Add Now!</p>
                 }
               {
                (isInCart(detail.id)) ?
-               <Link to="/cart" ><button className="btn btn-warning">Cart</button></Link> :   
+               <Link to="/cart" ><button className="btn btn-warning bts">Go to Cart</button></Link> :   
                 <ItemCount initial={detail.initial} stock={detail.stock} onAdd={onAdd}/>
               }
-                       
-    </div>
+           </div>            
+    </div> 
 
   )
 }
